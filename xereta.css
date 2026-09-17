@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#dfdb1c 0%, #c0c760 50%, hsl(51, 77%, 71%) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header {
+    height: 100px;
+    align-items: center;
+    gap: 2px;
+}
+
+.main {
+    background-image: url(./IMG/xeretalogo-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    color: white;
+    font-size: 50px;
+    transform: translate(-300px);
+    width: 300px;
+    text-align: right;
+}
+
+.coca {
+    position: absolute;
+    height: 85vh;
+    ;
+}
+
+.footer {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .main {
+        align-items: flex-start;
+    }
+
+    .coca {
+        height: 70vh;
+        bottom: 20px;
+    }
+    .frase {
+        font-size: 25px;
+        transform: translateX(0);
+        width: 180px;
+        text-align: top;
+    }
+}

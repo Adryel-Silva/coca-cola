@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: fantasy;
+}
+
+.header {
+    height: 100px;
+    align-items: center;
+    gap: 2px;
+}
+
+.main {
+    background-image: url(./IMG/warhamerlogo-removebg-preview.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    color: rgb(197, 216, 31);
+    font-size: 80px;
+    transform: translate(-500px);
+    width: 300px;
+    text-align: right;
+}
+
+.coca {
+    position: absolute;
+    height: 85vh;
+    ;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 24px;
+    }
+
+    .main {
+        align-items: flex-start;
+    }
+    .iconmenu {
+        width: 100px;
+        height: 20vh;    }
+
+    .coca {
+        height: 60vh;
+        bottom: 100px;
+    }
+
+    .frase {
+        font-size: 30px;
+        transform: translateX(0);
+        width: 150px;
+        text-align: top;
+    }
+ .aguia{
+        width: 100px;
+        height: 20vh;
+    }
+}
